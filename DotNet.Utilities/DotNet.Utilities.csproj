@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CC7ED3AE-009F-41B0-B2CE-3345DDCDCA33}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DotNet.Utilities</RootNamespace>
+    <AssemblyName>DotNet.Utilities</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ChnCharInfo">
+      <HintPath>..\Lib\ChnCharInfo.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI">
+      <HintPath>..\Lib\NPOI.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Base\BaseBusinessLogic.cs" />
+    <Compile Include="Base\BaseBusinessLogic.DataTable.cs" />
+    <Compile Include="Base\BaseBusinessLogic.Field.cs" />
+    <Compile Include="Base\BaseRandom.cs" />
+    <Compile Include="Base\BaseSortLogic.cs" />
+    <Compile Include="Common\DateUtil.cs" />
+    <Compile Include="Common\DownloadTemplate.cs" />
+    <Compile Include="Common\FileUtil.cs" />
+    <Compile Include="Common\ImportUtil.cs" />
+    <Compile Include="Common\LogUtil.cs" />
+    <Compile Include="Common\ReflectionUtil.cs" />
+    <Compile Include="Common\SecretUtil.cs" />
+    <Compile Include="Common\StringUtil.cs" />
+    <Compile Include="Common\ValidateUtil.cs" />
+    <Compile Include="Common\VerifyCodeImage.cs" />
+    <Compile Include="Enums\AuditStatus.cs" />
+    <Compile Include="Enums\DbOperation.cs" />
+    <Compile Include="Enums\DefaultRole.cs" />
+    <Compile Include="Enums\MessageCategory.cs" />
+    <Compile Include="Enums\MessageFunction.cs" />
+    <Compile Include="Enums\MessageStateCode.cs" />
+    <Compile Include="Enums\OperationCode.cs" />
+    <Compile Include="Enums\OrganizeCategory.cs" />
+    <Compile Include="Enums\PermissionScope.cs" />
+    <Compile Include="Enums\StatusCode.cs" />
+    <Compile Include="Extension\DataTaleExtension.cs" />
+    <Compile Include="Extension\EnumDescription.cs" />
+    <Compile Include="Extension\EnumExtensions.cs" />
+    <Compile Include="Information\BaseSystemInfo.Client.cs" />
+    <Compile Include="Information\BaseSystemInfo.Company.cs" />
+    <Compile Include="Information\BaseSystemInfo.cs" />
+    <Compile Include="Information\BaseSystemInfo.Database.cs" />
+    <Compile Include="Information\BaseSystemInfo.Permission.cs" />
+    <Compile Include="Information\BaseSystemInfo.Secret.cs" />
+    <Compile Include="Information\BaseSystemInfo.Server.cs" />
+    <Compile Include="Information\BaseSystemInfo.UserInfo.cs" />
+    <Compile Include="Information\BaseUserInfo.cs" />
+    <Compile Include="Configuration\BaseConfiguration.cs" />
+    <Compile Include="Configuration\ConfigurationCategory.cs" />
+    <Compile Include="Configuration\ConfigurationHelper.cs" />
+    <Compile Include="Configuration\IConfiguration.cs" />
+    <Compile Include="Configuration\RegistryHelper.cs" />
+    <Compile Include="Configuration\TableConfigHelper.cs" />
+    <Compile Include="Configuration\UserConfigHelper.cs" />
+    <Compile Include="Enums\CurrentDbType.cs" />
+    <Compile Include="Information\MachineInfo.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ResourceManager\AppMessage.cs" />
+    <Compile Include="ResourceManager\AppMessage.Message.cs" />
+    <Compile Include="ResourceManager\AppMessage.Service.cs" />
+    <Compile Include="ResourceManager\ResourceManager.cs" />
+    <Compile Include="ResourceManager\ResourceManagerWrapper.cs" />
+    <Compile Include="ResourceManager\Resources.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ResourceManager\Sample.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

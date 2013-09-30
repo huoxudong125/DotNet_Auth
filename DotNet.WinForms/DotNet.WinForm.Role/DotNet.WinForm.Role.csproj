@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C3E7A2CE-0871-4953-A9A5-3A5E1FF90E17}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DotNet.WinForm.Role</RootNamespace>
+    <AssemblyName>DotNet.WinForm.Role</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FrmRoleAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRoleAdd.designer.cs">
+      <DependentUpon>FrmRoleAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRoleAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRoleAdmin.designer.cs">
+      <DependentUpon>FrmRoleAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRoleAdminList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRoleAdminList.designer.cs">
+      <DependentUpon>FrmRoleAdminList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRoleEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRoleEdit.designer.cs">
+      <DependentUpon>FrmRoleEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRoleSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRoleSelect.designer.cs">
+      <DependentUpon>FrmRoleSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRoleUserAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRoleUserAdmin.designer.cs">
+      <DependentUpon>FrmRoleUserAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRoleUserBatchSet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRoleUserBatchSet.designer.cs">
+      <DependentUpon>FrmRoleUserBatchSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRoleWithUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRoleWithUser.designer.cs">
+      <DependentUpon>FrmRoleWithUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRoleWithUserEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRoleWithUserEdit.designer.cs">
+      <DependentUpon>FrmRoleWithUserEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FrmRoleAdd.resx">
+      <DependentUpon>FrmRoleAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRoleAdmin.resx">
+      <DependentUpon>FrmRoleAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRoleAdminList.resx">
+      <DependentUpon>FrmRoleAdminList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRoleEdit.resx">
+      <DependentUpon>FrmRoleEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRoleSelect.resx">
+      <DependentUpon>FrmRoleSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRoleUserAdmin.resx">
+      <DependentUpon>FrmRoleUserAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRoleUserBatchSet.resx">
+      <DependentUpon>FrmRoleUserBatchSet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRoleWithUser.resx">
+      <DependentUpon>FrmRoleWithUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRoleWithUserEdit.resx">
+      <DependentUpon>FrmRoleWithUserEdit.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\DotNet.IService\DotNet.IService.csproj">
+      <Project>{e959a128-f19f-4a23-bea3-880926605e4f}</Project>
+      <Name>DotNet.IService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\DotNet.Model\DotNet.Model.csproj">
+      <Project>{0e239ce9-7fec-45b2-b2ec-258f49dfe269}</Project>
+      <Name>DotNet.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\DotNet.Service\DotNet.Service.csproj">
+      <Project>{5621b388-2b29-4d07-8a00-d7fb7dccd9cc}</Project>
+      <Name>DotNet.Service</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\DotNet.Utilities\DotNet.Utilities.csproj">
+      <Project>{cc7ed3ae-009f-41b0-b2ce-3345ddcdca33}</Project>
+      <Name>DotNet.Utilities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DotNet.WinForm.Common\DotNet.WinForm.Common.csproj">
+      <Project>{8329d3f6-cbeb-4d81-bf42-8b9d61416a73}</Project>
+      <Name>DotNet.WinForm.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DotNet.WinForm.Module\DotNet.WinForm.Module.csproj">
+      <Project>{a39139f8-0bb3-4f43-9877-fdbb27e01381}</Project>
+      <Name>DotNet.WinForm.Module</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5621B388-2B29-4D07-8A00-D7FB7DCCD9CC}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DotNet.Service</RootNamespace>
+    <AssemblyName>DotNet.Service</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaseService.cs" />
+    <Compile Include="BusinessDbHelperService.cs" />
+    <Compile Include="DbHelperService.cs" />
+    <Compile Include="DotNetService.cs" />
+    <Compile Include="ExceptionService.cs" />
+    <Compile Include="FileService.cs" />
+    <Compile Include="FolderService.cs" />
+    <Compile Include="ImpersonationService.cs" />
+    <Compile Include="ItemDetailsService.cs" />
+    <Compile Include="ItemsService.cs" />
+    <Compile Include="LogOnService.cs" />
+    <Compile Include="LogService.cs" />
+    <Compile Include="MessageService.cs" />
+    <Compile Include="ModuleService.cs" />
+    <Compile Include="OrganizeService.cs" />
+    <Compile Include="ParameterService.cs" />
+    <Compile Include="PermissionItemService.cs" />
+    <Compile Include="PermissionService.cs" />
+    <Compile Include="PermissionService.Organize.cs" />
+    <Compile Include="PermissionService.Resource.cs" />
+    <Compile Include="PermissionService.Role.cs" />
+    <Compile Include="PermissionService.Scope.cs" />
+    <Compile Include="PermissionService.Test.cs" />
+    <Compile Include="PermissionService.User.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RoleService.cs" />
+    <Compile Include="RoleService.User.cs" />
+    <Compile Include="SequenceService.cs" />
+    <Compile Include="ServerCache.cs" />
+    <Compile Include="ServiceFactory.cs" />
+    <Compile Include="Singleton.cs" />
+    <Compile Include="StaffService.cs" />
+    <Compile Include="TableColumnsService.cs" />
+    <Compile Include="UserCenterDbHelperService.cs" />
+    <Compile Include="UserService.cs" />
+    <Compile Include="UserService.Organize.cs" />
+    <Compile Include="UserService.Role.cs" />
+    <Compile Include="WorkFlowActivityAdminService.cs" />
+    <Compile Include="WorkFlowCurrentService.cs" />
+    <Compile Include="WorkFlowProcessAdminService.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DotNet.BaseManager\DotNet.BaseManagers.csproj">
+      <Project>{728246b7-8f5b-4ed6-8276-2a1ac73cc22e}</Project>
+      <Name>DotNet.BaseManagers</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DotNet.DbUtilities\DotNet.DbUtilities.csproj">
+      <Project>{12d788ed-059d-4abf-b2d1-2f7a2946d489}</Project>
+      <Name>DotNet.DbUtilities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DotNet.IService\DotNet.IService.csproj">
+      <Project>{e959a128-f19f-4a23-bea3-880926605e4f}</Project>
+      <Name>DotNet.IService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DotNet.Manager\DotNet.Manager.csproj">
+      <Project>{0431ec75-824c-4ca9-a350-dfdc28c5b6d2}</Project>
+      <Name>DotNet.Manager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DotNet.Model\DotNet.Model.csproj">
+      <Project>{0e239ce9-7fec-45b2-b2ec-258f49dfe269}</Project>
+      <Name>DotNet.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DotNet.Utilities\DotNet.Utilities.csproj">
+      <Project>{cc7ed3ae-009f-41b0-b2ce-3345ddcdca33}</Project>
+      <Name>DotNet.Utilities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,277 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C4524C81-2A1F-4FE1-88CB-B8FD5E9AED22}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DotNet.WinForm.Files</RootNamespace>
+    <AssemblyName>DotNet.WinForm.Files</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FrmDocumentAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDocumentAdd.designer.cs">
+      <DependentUpon>FrmDocumentAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDocumentEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDocumentEdit.designer.cs">
+      <DependentUpon>FrmDocumentEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmFileAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFileAdmin.designer.cs">
+      <DependentUpon>FrmFileAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmFileEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFileEdit.designer.cs">
+      <DependentUpon>FrmFileEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmFolderAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFolderAdd.designer.cs">
+      <DependentUpon>FrmFolderAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmFolderAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFolderAdmin.designer.cs">
+      <DependentUpon>FrmFolderAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmFolderEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFolderEdit.designer.cs">
+      <DependentUpon>FrmFolderEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmFolderMultiSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFolderMultiSelect.designer.cs">
+      <DependentUpon>FrmFolderMultiSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmFolderPermission.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFolderPermission.designer.cs">
+      <DependentUpon>FrmFolderPermission.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmFolderSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFolderSelect.designer.cs">
+      <DependentUpon>FrmFolderSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPicture.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPicture.designer.cs">
+      <DependentUpon>FrmPicture.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UCAttachment.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCAttachment.designer.cs">
+      <DependentUpon>UCAttachment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCFolderSelect.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCFolderSelect.designer.cs">
+      <DependentUpon>UCFolderSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCPicture.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCPicture.designer.cs">
+      <DependentUpon>UCPicture.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FrmDocumentAdd.resx">
+      <DependentUpon>FrmDocumentAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDocumentEdit.resx">
+      <DependentUpon>FrmDocumentEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmFileAdmin.resx">
+      <DependentUpon>FrmFileAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmFileEdit.resx">
+      <DependentUpon>FrmFileEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmFolderAdd.resx">
+      <DependentUpon>FrmFolderAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmFolderAdmin.resx">
+      <DependentUpon>FrmFolderAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmFolderEdit.resx">
+      <DependentUpon>FrmFolderEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmFolderMultiSelect.resx">
+      <DependentUpon>FrmFolderMultiSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmFolderPermission.resx">
+      <DependentUpon>FrmFolderPermission.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmFolderSelect.resx">
+      <DependentUpon>FrmFolderSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPicture.resx">
+      <DependentUpon>FrmPicture.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="UCAttachment.resx">
+      <DependentUpon>UCAttachment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCFolderSelect.resx">
+      <DependentUpon>UCFolderSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCPicture.resx">
+      <DependentUpon>UCPicture.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\DotNet.BaseManager\DotNet.BaseManagers.csproj">
+      <Project>{728246b7-8f5b-4ed6-8276-2a1ac73cc22e}</Project>
+      <Name>DotNet.BaseManagers</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\DotNet.DbUtilities\DotNet.DbUtilities.csproj">
+      <Project>{12d788ed-059d-4abf-b2d1-2f7a2946d489}</Project>
+      <Name>DotNet.DbUtilities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\DotNet.IService\DotNet.IService.csproj">
+      <Project>{e959a128-f19f-4a23-bea3-880926605e4f}</Project>
+      <Name>DotNet.IService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\DotNet.Manager\DotNet.Manager.csproj">
+      <Project>{0431ec75-824c-4ca9-a350-dfdc28c5b6d2}</Project>
+      <Name>DotNet.Manager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\DotNet.Model\DotNet.Model.csproj">
+      <Project>{0e239ce9-7fec-45b2-b2ec-258f49dfe269}</Project>
+      <Name>DotNet.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\DotNet.Service\DotNet.Service.csproj">
+      <Project>{5621b388-2b29-4d07-8a00-d7fb7dccd9cc}</Project>
+      <Name>DotNet.Service</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\DotNet.Utilities\DotNet.Utilities.csproj">
+      <Project>{cc7ed3ae-009f-41b0-b2ce-3345ddcdca33}</Project>
+      <Name>DotNet.Utilities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DotNet.WinForm.Common\DotNet.WinForm.Common.csproj">
+      <Project>{8329d3f6-cbeb-4d81-bf42-8b9d61416a73}</Project>
+      <Name>DotNet.WinForm.Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Address.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\App.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Company.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Document.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Face_0.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Head.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Help.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Home.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OA.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ShareAnIdea.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sned.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\update.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\workflow.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

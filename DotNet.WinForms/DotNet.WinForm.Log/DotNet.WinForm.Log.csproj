@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F99B0E1B-916D-44BF-9411-DF338AB57D1B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DotNet.WinForm.Log</RootNamespace>
+    <AssemblyName>DotNet.WinForm.Log</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FrmApplicationLogByDate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmApplicationLogByDate.designer.cs">
+      <DependentUpon>FrmApplicationLogByDate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLogByModule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLogByModule.designer.cs">
+      <DependentUpon>FrmLogByModule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLogByUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLogByUser.designer.cs">
+      <DependentUpon>FrmLogByUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLogGeneral.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLogGeneral.designer.cs">
+      <DependentUpon>FrmLogGeneral.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSystemLogByDate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSystemLogByDate.designer.cs">
+      <DependentUpon>FrmSystemLogByDate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FrmApplicationLogByDate.resx">
+      <DependentUpon>FrmApplicationLogByDate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLogByModule.resx">
+      <DependentUpon>FrmLogByModule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLogByUser.resx">
+      <DependentUpon>FrmLogByUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLogGeneral.resx">
+      <DependentUpon>FrmLogGeneral.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSystemLogByDate.resx">
+      <DependentUpon>FrmSystemLogByDate.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\DotNet.IService\DotNet.IService.csproj">
+      <Project>{e959a128-f19f-4a23-bea3-880926605e4f}</Project>
+      <Name>DotNet.IService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\DotNet.Model\DotNet.Model.csproj">
+      <Project>{0e239ce9-7fec-45b2-b2ec-258f49dfe269}</Project>
+      <Name>DotNet.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\DotNet.Service\DotNet.Service.csproj">
+      <Project>{5621b388-2b29-4d07-8a00-d7fb7dccd9cc}</Project>
+      <Name>DotNet.Service</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\DotNet.Utilities\DotNet.Utilities.csproj">
+      <Project>{cc7ed3ae-009f-41b0-b2ce-3345ddcdca33}</Project>
+      <Name>DotNet.Utilities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DotNet.WinForm.Common\DotNet.WinForm.Common.csproj">
+      <Project>{8329d3f6-cbeb-4d81-bf42-8b9d61416a73}</Project>
+      <Name>DotNet.WinForm.Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

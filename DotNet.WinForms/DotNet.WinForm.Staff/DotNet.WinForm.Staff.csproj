@@ -1,0 +1,197 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7D98D386-1086-4B2A-91D7-B221F90C3E78}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DotNet.WinForm.Staff</RootNamespace>
+    <AssemblyName>DotNet.WinForm.Staff</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FrmImportStaff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmImportStaff.designer.cs">
+      <DependentUpon>FrmImportStaff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSendEmail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSendEmail.designer.cs">
+      <DependentUpon>FrmSendEmail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmStaffAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmStaffAdd.designer.cs">
+      <DependentUpon>FrmStaffAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmStaffAddressAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmStaffAddressAdmin.designer.cs">
+      <DependentUpon>FrmStaffAddressAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmStaffAddressEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmStaffAddressEdit.designer.cs">
+      <DependentUpon>FrmStaffAddressEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmStaffAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmStaffAdmin.designer.cs">
+      <DependentUpon>FrmStaffAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmStaffChangeDepartment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmStaffChangeDepartment.designer.cs">
+      <DependentUpon>FrmStaffChangeDepartment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmStaffEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmStaffEdit.designer.cs">
+      <DependentUpon>FrmStaffEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmStaffOrganizeSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmStaffOrganizeSelect.designer.cs">
+      <DependentUpon>FrmStaffOrganizeSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmStaffSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmStaffSelect.designer.cs">
+      <DependentUpon>FrmStaffSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FrmImportStaff.resx">
+      <DependentUpon>FrmImportStaff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSendEmail.resx">
+      <DependentUpon>FrmSendEmail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmStaffAdd.resx">
+      <DependentUpon>FrmStaffAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmStaffAddressAdmin.resx">
+      <DependentUpon>FrmStaffAddressAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmStaffAddressEdit.resx">
+      <DependentUpon>FrmStaffAddressEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmStaffAdmin.resx">
+      <DependentUpon>FrmStaffAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmStaffChangeDepartment.resx">
+      <DependentUpon>FrmStaffChangeDepartment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmStaffEdit.resx">
+      <DependentUpon>FrmStaffEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmStaffOrganizeSelect.resx">
+      <DependentUpon>FrmStaffOrganizeSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmStaffSelect.resx">
+      <DependentUpon>FrmStaffSelect.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\DotNet.BaseManager\DotNet.BaseManagers.csproj">
+      <Project>{728246b7-8f5b-4ed6-8276-2a1ac73cc22e}</Project>
+      <Name>DotNet.BaseManagers</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\DotNet.IService\DotNet.IService.csproj">
+      <Project>{e959a128-f19f-4a23-bea3-880926605e4f}</Project>
+      <Name>DotNet.IService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\DotNet.Manager\DotNet.Manager.csproj">
+      <Project>{0431ec75-824c-4ca9-a350-dfdc28c5b6d2}</Project>
+      <Name>DotNet.Manager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\DotNet.Model\DotNet.Model.csproj">
+      <Project>{0e239ce9-7fec-45b2-b2ec-258f49dfe269}</Project>
+      <Name>DotNet.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\DotNet.Service\DotNet.Service.csproj">
+      <Project>{5621b388-2b29-4d07-8a00-d7fb7dccd9cc}</Project>
+      <Name>DotNet.Service</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\DotNet.Utilities\DotNet.Utilities.csproj">
+      <Project>{cc7ed3ae-009f-41b0-b2ce-3345ddcdca33}</Project>
+      <Name>DotNet.Utilities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DotNet.WinForm.Common\DotNet.WinForm.Common.csproj">
+      <Project>{8329d3f6-cbeb-4d81-bf42-8b9d61416a73}</Project>
+      <Name>DotNet.WinForm.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DotNet.WinForm.Duty\DotNet.WinForm.Duty.csproj">
+      <Project>{2736bd79-ee83-4f1c-987e-c5d057a3d226}</Project>
+      <Name>DotNet.WinForm.Duty</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DotNet.WinForm.File\DotNet.WinForm.Files.csproj">
+      <Project>{c4524c81-2a1f-4fe1-88cb-b8fd5e9aed22}</Project>
+      <Name>DotNet.WinForm.Files</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DotNet.WinForm.ItemDetails\DotNet.WinForm.ItemDetails.csproj">
+      <Project>{bcaf99c4-3685-4b59-b657-80e81cc8fdf4}</Project>
+      <Name>DotNet.WinForm.ItemDetails</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DotNet.WinForm.Organization\DotNet.WinForm.Organization.csproj">
+      <Project>{89fec02d-1049-48a3-98b7-466425981137}</Project>
+      <Name>DotNet.WinForm.Organization</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DotNet.WinForm.User\DotNet.WinForm.User.csproj">
+      <Project>{f3b73d0f-c5d0-45d9-8101-dc6bc8373cf5}</Project>
+      <Name>DotNet.WinForm.User</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{759071DB-6E64-431A-AC94-5D0962213379}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DotNet.WinForm</RootNamespace>
+    <AssemblyName>DotNet.WinForm</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevComponents.DotNetBar2">
+      <HintPath>..\Lib\DevComponents.DotNetBar2.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FrmIE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmIE.designer.cs">
+      <DependentUpon>FrmIE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MDIMainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MDIMainForm.designer.cs">
+      <DependentUpon>MDIMainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SDIMainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SDIMainForm.designer.cs">
+      <DependentUpon>SDIMainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TabsMainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TabsMainForm.designer.cs">
+      <DependentUpon>TabsMainForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FrmIE.resx">
+      <DependentUpon>FrmIE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDIMainForm.resx">
+      <DependentUpon>MDIMainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="SDIMainForm.resx">
+      <DependentUpon>SDIMainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TabsMainForm.resx">
+      <DependentUpon>TabsMainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="App.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App.ico" />
+    <Content Include="Config.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="Resources\App.ico" />
+    <None Include="Resources\workflow.jpg" />
+    <None Include="Resources\update.png" />
+    <None Include="Resources\sned.jpg" />
+    <None Include="Resources\ShareAnIdea.png" />
+    <None Include="Resources\OA.png" />
+    <None Include="Resources\Home.jpg" />
+    <None Include="Resources\Help.png" />
+    <None Include="Resources\Head.bmp" />
+    <None Include="Resources\Face_0.gif" />
+    <None Include="Resources\Document.png" />
+    <None Include="Resources\Company.jpg" />
+    <None Include="Resources\Address.png" />
+    <Content Include="WebService.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DotNet.IService\DotNet.IService.csproj">
+      <Project>{e959a128-f19f-4a23-bea3-880926605e4f}</Project>
+      <Name>DotNet.IService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DotNet.Model\DotNet.Model.csproj">
+      <Project>{0e239ce9-7fec-45b2-b2ec-258f49dfe269}</Project>
+      <Name>DotNet.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DotNet.Service\DotNet.Service.csproj">
+      <Project>{5621b388-2b29-4d07-8a00-d7fb7dccd9cc}</Project>
+      <Name>DotNet.Service</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DotNet.Utilities\DotNet.Utilities.csproj">
+      <Project>{cc7ed3ae-009f-41b0-b2ce-3345ddcdca33}</Project>
+      <Name>DotNet.Utilities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DotNet.WinForms\DotNet.WinForm.Common\DotNet.WinForm.Common.csproj">
+      <Project>{8329d3f6-cbeb-4d81-bf42-8b9d61416a73}</Project>
+      <Name>DotNet.WinForm.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DotNet.WinForms\DotNet.WinForm.Login\DotNet.WinForm.Login.csproj">
+      <Project>{879cb55f-3c28-4c51-87d3-95f7a9edf513}</Project>
+      <Name>DotNet.WinForm.Login</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DotNet.WinForms\DotNet.WinForm.Message\DotNet.WinForm.Message.csproj">
+      <Project>{c7ac801e-968f-4025-8d7e-17334c90455a}</Project>
+      <Name>DotNet.WinForm.Message</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BCAF99C4-3685-4B59-B657-80E81CC8FDF4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DotNet.WinForm.ItemDetails</RootNamespace>
+    <AssemblyName>DotNet.WinForm.ItemDetails</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FrmItemDetailsAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmItemDetailsAdd.designer.cs">
+      <DependentUpon>FrmItemDetailsAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmItemDetailsAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmItemDetailsAdmin.designer.cs">
+      <DependentUpon>FrmItemDetailsAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmItemDetailsEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmItemDetailsEdit.designer.cs">
+      <DependentUpon>FrmItemDetailsEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmItemDetailsMultiSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmItemDetailsMultiSelect.designer.cs">
+      <DependentUpon>FrmItemDetailsMultiSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmItemDetailsSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmItemDetailsSelect.designer.cs">
+      <DependentUpon>FrmItemDetailsSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmItemDetailsTreeSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmItemDetailsTreeSelect.designer.cs">
+      <DependentUpon>FrmItemDetailsTreeSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmItemsAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmItemsAdd.designer.cs">
+      <DependentUpon>FrmItemsAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmItemsAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmItemsAdmin.designer.cs">
+      <DependentUpon>FrmItemsAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmItemsEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmItemsEdit.designer.cs">
+      <DependentUpon>FrmItemsEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UCItemDetailsTreeSelect.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCItemDetailsTreeSelect.designer.cs">
+      <DependentUpon>UCItemDetailsTreeSelect.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FrmItemDetailsAdd.resx">
+      <DependentUpon>FrmItemDetailsAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmItemDetailsAdmin.resx">
+      <DependentUpon>FrmItemDetailsAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmItemDetailsEdit.resx">
+      <DependentUpon>FrmItemDetailsEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmItemDetailsMultiSelect.resx">
+      <DependentUpon>FrmItemDetailsMultiSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmItemDetailsSelect.resx">
+      <DependentUpon>FrmItemDetailsSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmItemDetailsTreeSelect.resx">
+      <DependentUpon>FrmItemDetailsTreeSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmItemsAdd.resx">
+      <DependentUpon>FrmItemsAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmItemsAdmin.resx">
+      <DependentUpon>FrmItemsAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmItemsEdit.resx">
+      <DependentUpon>FrmItemsEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="UCItemDetailsTreeSelect.resx">
+      <DependentUpon>UCItemDetailsTreeSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\DotNet.IService\DotNet.IService.csproj">
+      <Project>{e959a128-f19f-4a23-bea3-880926605e4f}</Project>
+      <Name>DotNet.IService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\DotNet.Model\DotNet.Model.csproj">
+      <Project>{0e239ce9-7fec-45b2-b2ec-258f49dfe269}</Project>
+      <Name>DotNet.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\DotNet.Service\DotNet.Service.csproj">
+      <Project>{5621b388-2b29-4d07-8a00-d7fb7dccd9cc}</Project>
+      <Name>DotNet.Service</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\DotNet.Utilities\DotNet.Utilities.csproj">
+      <Project>{cc7ed3ae-009f-41b0-b2ce-3345ddcdca33}</Project>
+      <Name>DotNet.Utilities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DotNet.WinForm.Common\DotNet.WinForm.Common.csproj">
+      <Project>{8329d3f6-cbeb-4d81-bf42-8b9d61416a73}</Project>
+      <Name>DotNet.WinForm.Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

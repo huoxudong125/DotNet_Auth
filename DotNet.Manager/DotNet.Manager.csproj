@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0431EC75-824C-4CA9-A350-DFDC28C5B6D2}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DotNet.Manager</RootNamespace>
+    <AssemblyName>DotNet.Manager</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common\BaseCommentManager.Auto.cs" />
+    <Compile Include="Common\BaseCommentManager.cs" />
+    <Compile Include="Common\BaseContactDetailsManager.Auto.cs" />
+    <Compile Include="Common\BaseContactDetailsManager.cs" />
+    <Compile Include="Common\BaseContactManager.Auto.cs" />
+    <Compile Include="Common\BaseContactManager.cs" />
+    <Compile Include="Common\BaseExceptionManager.cs" />
+    <Compile Include="Common\BaseFileManager.Auto.cs" />
+    <Compile Include="Common\BaseFileManager.cs" />
+    <Compile Include="Common\BaseFolderManager.Auto.cs" />
+    <Compile Include="Common\BaseFolderManager.cs" />
+    <Compile Include="Common\BaseItemDetailsManager.Auto.cs" />
+    <Compile Include="Common\BaseItemDetailsManager.cs" />
+    <Compile Include="Common\BaseItemsManager.Auto.cs" />
+    <Compile Include="Common\BaseItemsManager.cs" />
+    <Compile Include="Common\BaseLogManager.cs" />
+    <Compile Include="Common\BaseMessageManager.Auto.cs" />
+    <Compile Include="Common\BaseMessageManager.cs" />
+    <Compile Include="Common\BaseModuleManager.Auto.cs" />
+    <Compile Include="Common\BaseModuleManager.cs" />
+    <Compile Include="Common\BaseNewsManager.Auto.cs" />
+    <Compile Include="Common\BaseNewsManager.cs" />
+    <Compile Include="Common\BaseNoteManager.Auto.cs" />
+    <Compile Include="Common\BaseNoteManager.cs" />
+    <Compile Include="Common\BaseOrganizeManager.Auto.cs" />
+    <Compile Include="Common\BaseOrganizeManager.cs" />
+    <Compile Include="Common\BaseOrganizeManager.Expand.cs" />
+    <Compile Include="Common\BaseParameterManager.Auto.cs" />
+    <Compile Include="Common\BaseParameterManager.cs" />
+    <Compile Include="Common\BaseProjectManager.cs" />
+    <Compile Include="Common\BaseRoleManager.Auto.cs" />
+    <Compile Include="Common\BaseRoleManager.cs" />
+    <Compile Include="Common\BaseStaffManager.Auto.cs" />
+    <Compile Include="Common\BaseStaffManager.cs" />
+    <Compile Include="Common\BaseTableColumnsManager.Auto.cs" />
+    <Compile Include="Common\BaseTableColumnsManager.cs" />
+    <Compile Include="Common\BaseUserOrganizeManager.Auto.cs" />
+    <Compile Include="Common\BaseUserOrganizeManager.cs" />
+    <Compile Include="Common\BaseUserRoleManager.Auto.cs" />
+    <Compile Include="Common\ConstraintUtil.cs" />
+    <Compile Include="Permission\BaseOrganizeModuleScopeManager.cs" />
+    <Compile Include="Permission\BaseOrganizePermissionManager.cs" />
+    <Compile Include="Permission\BaseOrganizeScopeManager.cs" />
+    <Compile Include="Permission\BasePermissionItemManager.Auto.cs" />
+    <Compile Include="Permission\BasePermissionItemManager.cs" />
+    <Compile Include="Permission\BasePermissionManager.Auto.cs" />
+    <Compile Include="Permission\BasePermissionManager.cs" />
+    <Compile Include="Permission\BasePermissionModuleManager.cs" />
+    <Compile Include="Permission\BasePermissionScopeManager.Auto.cs" />
+    <Compile Include="Permission\BasePermissionScopeManager.cs" />
+    <Compile Include="Permission\BaseRoleModuleScopeManager.cs" />
+    <Compile Include="Permission\BaseRoleOrganizeScopeManager.cs" />
+    <Compile Include="Permission\BaseRolePermissionManager.cs" />
+    <Compile Include="Permission\BaseRolePermissionScopeManager.cs" />
+    <Compile Include="Permission\BaseRoleRoleScopeManager.cs" />
+    <Compile Include="Permission\BaseRoleScopeManager.cs" />
+    <Compile Include="Permission\BaseRoleUserScopeManager.cs" />
+    <Compile Include="Permission\BaseUserModuleScopeManager.cs" />
+    <Compile Include="Permission\BaseUserOrganizeScopeManager.cs" />
+    <Compile Include="Permission\BaseUserPermissionManager.cs" />
+    <Compile Include="Permission\BaseUserPermissionScopeManager.cs" />
+    <Compile Include="Permission\BaseUserRoleScopeManager.cs" />
+    <Compile Include="Permission\BaseUserScopeManager.cs" />
+    <Compile Include="Permission\BaseUserUserScopeManager.cs" />
+    <Compile Include="User\BaseUserManager.Add.cs" />
+    <Compile Include="User\BaseUserManager.Auto.cs" />
+    <Compile Include="User\BaseUserManager.Bank.cs" />
+    <Compile Include="User\BaseUserManager.ChangePassword.cs" />
+    <Compile Include="User\BaseUserManager.CheckIP.cs" />
+    <Compile Include="User\BaseUserManager.cs" />
+    <Compile Include="User\BaseUserManager.Delete.cs" />
+    <Compile Include="User\BaseUserManager.Duty.cs" />
+    <Compile Include="User\BaseUserManager.LogOn.cs" />
+    <Compile Include="User\BaseUserManager.Organize.cs" />
+    <Compile Include="User\BaseUserManager.Role.cs" />
+    <Compile Include="User\BaseUserManager.SetPassword.cs" />
+    <Compile Include="User\BaseUserManager.Update.cs" />
+    <Compile Include="WorkFlow\BaseWorkFlowActivityManager.Auto.cs" />
+    <Compile Include="WorkFlow\BaseWorkFlowActivityManager.cs" />
+    <Compile Include="WorkFlow\BaseWorkFlowBillTemplateManager.Auto.cs" />
+    <Compile Include="WorkFlow\BaseWorkFlowBillTemplateManager.cs" />
+    <Compile Include="WorkFlow\BaseWorkFlowCurrentManager.Auto.cs" />
+    <Compile Include="WorkFlow\BaseWorkFlowCurrentManager.cs" />
+    <Compile Include="WorkFlow\BaseWorkFlowHistoryManager.Auto.cs" />
+    <Compile Include="WorkFlow\BaseWorkFlowHistoryManager.cs" />
+    <Compile Include="WorkFlow\BaseWorkFlowManager.AuditComplete.cs" />
+    <Compile Include="WorkFlow\BaseWorkFlowManager.AuditPass.cs" />
+    <Compile Include="WorkFlow\BaseWorkFlowManager.AuditQuash.cs" />
+    <Compile Include="WorkFlow\BaseWorkFlowManager.AuditReject.cs" />
+    <Compile Include="WorkFlow\BaseWorkFlowManager.AuditStatr.cs" />
+    <Compile Include="WorkFlow\BaseWorkFlowManager.AuditTransmit.cs" />
+    <Compile Include="WorkFlow\BaseWorkFlowManager.cs" />
+    <Compile Include="WorkFlow\BaseWorkFlowManager.FreeAuditPass.cs" />
+    <Compile Include="WorkFlow\BaseWorkFlowManager.FreeAuditReject.cs" />
+    <Compile Include="WorkFlow\BaseWorkFlowManager.FreeStart.cs" />
+    <Compile Include="WorkFlow\BaseWorkFlowProcessManager.Auto.cs" />
+    <Compile Include="WorkFlow\BaseWorkFlowProcessManager.cs" />
+    <Compile Include="WorkFlow\BaseWorkFlowStepManager.Auto.cs" />
+    <Compile Include="WorkFlow\BaseWorkFlowStepManager.cs" />
+    <Compile Include="WorkFlow\IWorkFlowManager.cs" />
+    <Compile Include="WorkFlow\UserBillManager.cs" />
+    <Compile Include="WorkFlow\UserBillManager.WorkFlow.cs" />
+    <Compile Include="WorkFlow\UserReportManager.WorkFlow.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DotNet.BaseManager\DotNet.BaseManagers.csproj">
+      <Project>{728246b7-8f5b-4ed6-8276-2a1ac73cc22e}</Project>
+      <Name>DotNet.BaseManagers</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DotNet.DbUtilities\DotNet.DbUtilities.csproj">
+      <Project>{12d788ed-059d-4abf-b2d1-2f7a2946d489}</Project>
+      <Name>DotNet.DbUtilities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DotNet.Model\DotNet.Model.csproj">
+      <Project>{0e239ce9-7fec-45b2-b2ec-258f49dfe269}</Project>
+      <Name>DotNet.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DotNet.Utilities\DotNet.Utilities.csproj">
+      <Project>{cc7ed3ae-009f-41b0-b2ce-3345ddcdca33}</Project>
+      <Name>DotNet.Utilities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

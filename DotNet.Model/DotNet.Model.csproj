@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0E239CE9-7FEC-45B2-B2EC-258F49DFE269}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DotNet.Model</RootNamespace>
+    <AssemblyName>DotNet.Model</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaseCommentEntity.cs" />
+    <Compile Include="BaseCommentTable.cs" />
+    <Compile Include="BaseContactDetailsEntity.cs" />
+    <Compile Include="BaseContactDetailsTable.cs" />
+    <Compile Include="BaseContactEntity.cs" />
+    <Compile Include="BaseContactTable.cs" />
+    <Compile Include="BaseEntity.cs" />
+    <Compile Include="BaseExceptionEntity.cs" />
+    <Compile Include="BaseExceptionTable.cs" />
+    <Compile Include="BaseFileEntity.cs" />
+    <Compile Include="BaseFileTable.cs" />
+    <Compile Include="BaseFolderEntity.cs" />
+    <Compile Include="BaseFolderTable.cs" />
+    <Compile Include="BaseItemDetailsEntity.cs" />
+    <Compile Include="BaseItemDetailsTable.cs" />
+    <Compile Include="BaseItemsEntity.cs" />
+    <Compile Include="BaseItemsTable.cs" />
+    <Compile Include="BaseLogEntity.cs" />
+    <Compile Include="BaseLogTable.cs" />
+    <Compile Include="BaseMessageEntity.cs" />
+    <Compile Include="BaseMessageTable.cs" />
+    <Compile Include="BaseModuleEntity.cs" />
+    <Compile Include="BaseModuleTable.cs" />
+    <Compile Include="BaseNewsEntity.cs" />
+    <Compile Include="BaseNewsTable.cs" />
+    <Compile Include="BaseNoteEntity.cs" />
+    <Compile Include="BaseNoteTable.cs" />
+    <Compile Include="BaseOrganizeEntity.cs" />
+    <Compile Include="BaseOrganizeEntity.Expand.cs" />
+    <Compile Include="BaseOrganizeTable.cs" />
+    <Compile Include="BaseOrganizeTable.Expand.cs" />
+    <Compile Include="BaseParameterEntity.cs" />
+    <Compile Include="BaseParameterTable.cs" />
+    <Compile Include="BasePermissionEntity.cs" />
+    <Compile Include="BasePermissionItemEntity.cs" />
+    <Compile Include="BasePermissionItemTable.cs" />
+    <Compile Include="BasePermissionScopeEntity.cs" />
+    <Compile Include="BasePermissionScopeTable.cs" />
+    <Compile Include="BasePermissionTable.cs" />
+    <Compile Include="BaseProjectEntity.cs" />
+    <Compile Include="BaseProjectTable.cs" />
+    <Compile Include="BaseRoleEntity.cs" />
+    <Compile Include="BaseRoleTable.cs" />
+    <Compile Include="BaseSequenceEntity.cs" />
+    <Compile Include="BaseSequenceTable.cs" />
+    <Compile Include="BaseStaffEntity.cs" />
+    <Compile Include="BaseStaffTable.cs" />
+    <Compile Include="BaseTableColumnsEntity.cs" />
+    <Compile Include="BaseTableColumnsTable.cs" />
+    <Compile Include="BaseUserAddressEntity.cs" />
+    <Compile Include="BaseUserAddressTable.cs" />
+    <Compile Include="BaseUserEntity.cs" />
+    <Compile Include="BaseUserOrganizeEntity.cs" />
+    <Compile Include="BaseUserOrganizeTable.cs" />
+    <Compile Include="BaseUserRoleEntity.cs" />
+    <Compile Include="BaseUserRoleTable.cs" />
+    <Compile Include="BaseUserTable.cs" />
+    <Compile Include="BaseWorkFlowActivityEntity.cs" />
+    <Compile Include="BaseWorkFlowActivityTable.cs" />
+    <Compile Include="BaseWorkFlowBillTemplateEntity.cs" />
+    <Compile Include="BaseWorkFlowBillTemplateTable.cs" />
+    <Compile Include="BaseWorkFlowCurrentEntity.cs" />
+    <Compile Include="BaseWorkFlowCurrentTable.cs" />
+    <Compile Include="BaseWorkFlowHistoryEntity.cs" />
+    <Compile Include="BaseWorkFlowHistoryTable.cs" />
+    <Compile Include="BaseWorkFlowProcessEntity.cs" />
+    <Compile Include="BaseWorkFlowProcessTable.cs" />
+    <Compile Include="BaseWorkFlowStepEntity.cs" />
+    <Compile Include="BaseWorkFlowStepTable.cs" />
+    <Compile Include="BaseWorkReportEntity.cs" />
+    <Compile Include="BaseWorkReportTable.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DotNet.Utilities\DotNet.Utilities.csproj">
+      <Project>{cc7ed3ae-009f-41b0-b2ce-3345ddcdca33}</Project>
+      <Name>DotNet.Utilities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

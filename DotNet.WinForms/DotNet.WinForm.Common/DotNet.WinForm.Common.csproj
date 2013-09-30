@@ -1,0 +1,329 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8329D3F6-CBEB-4D81-BF42-8B9D61416A73}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DotNet.WinForm.Common</RootNamespace>
+    <AssemblyName>DotNet.WinForm.Common</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Aspose.Cells">
+      <HintPath>..\..\Lib\Aspose.Cells.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AsposeExcelTools.cs" />
+    <Compile Include="BaseCheckInput.cs" />
+    <Compile Include="BaseExportCSV.cs" />
+    <Compile Include="BaseExportExcel.cs" />
+    <Compile Include="BaseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseInterfaceLogic.cs" />
+    <Compile Include="CacheManager.cs" />
+    <Compile Include="CallCtrlSafety.cs" />
+    <Compile Include="ClientCache.cs" />
+    <Compile Include="CoolPrintPreviewControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CoolPrintPreviewDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CoolPrintPreviewDialog.designer.cs">
+      <DependentUpon>CoolPrintPreviewDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Export2Excel.cs" />
+    <Compile Include="FormPostion.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FrmAboutThis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAboutThis.designer.cs">
+      <DependentUpon>FrmAboutThis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCheckUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCheckUpdate.designer.cs">
+      <DependentUpon>FrmCheckUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDataGridViewSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDataGridViewSetting.designer.cs">
+      <DependentUpon>FrmDataGridViewSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmException.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmException.designer.cs">
+      <DependentUpon>FrmException.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmExceptionAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmExceptionAdmin.designer.cs">
+      <DependentUpon>FrmExceptionAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmOnlineEmailSupport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmOnlineEmailSupport.designer.cs">
+      <DependentUpon>FrmOnlineEmailSupport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPrint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPrint.designer.cs">
+      <DependentUpon>FrmPrint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\IBaseForm.cs" />
+    <Compile Include="Interface\IBaseMainForm.cs" />
+    <Compile Include="Pager.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PagerInfo.cs" />
+    <Compile Include="PrintDGV.cs" />
+    <Compile Include="PrintOptions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrintOptions.designer.cs">
+      <DependentUpon>PrintOptions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="RegistryHelper.cs" />
+    <Compile Include="SortableBindingList.cs" />
+    <Compile Include="WinControls\UCItemDetailsSelect.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WinControls\UCItemDetailsSelect.Designer.cs">
+      <DependentUpon>UCItemDetailsSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WinControls\UCModuleSelect.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WinControls\UCModuleSelect.Designer.cs">
+      <DependentUpon>UCModuleSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WinControls\UCOrganizeSelect.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WinControls\UCOrganizeSelect.Designer.cs">
+      <DependentUpon>UCOrganizeSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WinControls\UCPermissionSelect.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WinControls\UCPermissionSelect.Designer.cs">
+      <DependentUpon>UCPermissionSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WinControls\UCRoleSelect.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WinControls\UCRoleSelect.Designer.cs">
+      <DependentUpon>UCRoleSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WinControls\UCScopePermissionSelect.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WinControls\UCScopePermissionSelect.Designer.cs">
+      <DependentUpon>UCScopePermissionSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WinControls\UCStaffSelect.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WinControls\UCStaffSelect.Designer.cs">
+      <DependentUpon>UCStaffSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WinControls\UCTableSort.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WinControls\UCTableSort.Designer.cs">
+      <DependentUpon>UCTableSort.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WinControls\UCUserSelect.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WinControls\UCUserSelect.Designer.cs">
+      <DependentUpon>UCUserSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WinGridView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WinGridView.designer.cs">
+      <DependentUpon>WinGridView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WinGridViewPager.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WinGridViewPager.designer.cs">
+      <DependentUpon>WinGridViewPager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WinListViewPager.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WinListViewPager.designer.cs">
+      <DependentUpon>WinListViewPager.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="BaseForm.resx">
+      <DependentUpon>BaseForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CoolPrintPreviewDialog.resx">
+      <DependentUpon>CoolPrintPreviewDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAboutThis.resx">
+      <DependentUpon>FrmAboutThis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCheckUpdate.resx">
+      <DependentUpon>FrmCheckUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDataGridViewSetting.resx">
+      <DependentUpon>FrmDataGridViewSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmException.resx">
+      <DependentUpon>FrmException.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmExceptionAdmin.resx">
+      <DependentUpon>FrmExceptionAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmOnlineEmailSupport.resx">
+      <DependentUpon>FrmOnlineEmailSupport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPrint.resx">
+      <DependentUpon>FrmPrint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pager.resx">
+      <DependentUpon>Pager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrintOptions.resx">
+      <DependentUpon>PrintOptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinControls\UCItemDetailsSelect.resx">
+      <DependentUpon>UCItemDetailsSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinControls\UCModuleSelect.resx">
+      <DependentUpon>UCModuleSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinControls\UCOrganizeSelect.resx">
+      <DependentUpon>UCOrganizeSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinControls\UCPermissionSelect.resx">
+      <DependentUpon>UCPermissionSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinControls\UCRoleSelect.resx">
+      <DependentUpon>UCRoleSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinControls\UCScopePermissionSelect.resx">
+      <DependentUpon>UCScopePermissionSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinControls\UCStaffSelect.resx">
+      <DependentUpon>UCStaffSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinControls\UCTableSort.resx">
+      <DependentUpon>UCTableSort.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinControls\UCUserSelect.resx">
+      <DependentUpon>UCUserSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinGridView.resx">
+      <DependentUpon>WinGridView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinGridViewPager.resx">
+      <DependentUpon>WinGridViewPager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinListViewPager.resx">
+      <DependentUpon>WinListViewPager.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App.ico" />
+    <None Include="Resources\workflow.jpg" />
+    <None Include="Resources\update.png" />
+    <None Include="Resources\sned.jpg" />
+    <None Include="Resources\ShareAnIdea.png" />
+    <None Include="Resources\OA.png" />
+    <None Include="Resources\Home.jpg" />
+    <None Include="Resources\Help.png" />
+    <None Include="Resources\Head.bmp" />
+    <None Include="Resources\Face_0.gif" />
+    <None Include="Resources\Document.png" />
+    <None Include="Resources\Company.jpg" />
+    <None Include="Resources\App.ico" />
+    <None Include="Resources\Address.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\DotNet.DbUtilities\DotNet.DbUtilities.csproj">
+      <Project>{12d788ed-059d-4abf-b2d1-2f7a2946d489}</Project>
+      <Name>DotNet.DbUtilities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\DotNet.IService\DotNet.IService.csproj">
+      <Project>{e959a128-f19f-4a23-bea3-880926605e4f}</Project>
+      <Name>DotNet.IService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\DotNet.Model\DotNet.Model.csproj">
+      <Project>{0e239ce9-7fec-45b2-b2ec-258f49dfe269}</Project>
+      <Name>DotNet.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\DotNet.Service\DotNet.Service.csproj">
+      <Project>{5621b388-2b29-4d07-8a00-d7fb7dccd9cc}</Project>
+      <Name>DotNet.Service</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\DotNet.Utilities\DotNet.Utilities.csproj">
+      <Project>{cc7ed3ae-009f-41b0-b2ce-3345ddcdca33}</Project>
+      <Name>DotNet.Utilities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,536 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CE22BFCB-56CF-4DAF-AE41-7EF7CDCE8283}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DotNet.WinForm.Permission</RootNamespace>
+    <AssemblyName>DotNet.WinForm.Permission</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FrmOrganizePermission.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmOrganizePermission.designer.cs">
+      <DependentUpon>FrmOrganizePermission.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmOrganizePermissionAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmOrganizePermissionAdmin.designer.cs">
+      <DependentUpon>FrmOrganizePermissionAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPermissionItemAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPermissionItemAdd.designer.cs">
+      <DependentUpon>FrmPermissionItemAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPermissionItemAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPermissionItemAdmin.designer.cs">
+      <DependentUpon>FrmPermissionItemAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPermissionItemEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPermissionItemEdit.designer.cs">
+      <DependentUpon>FrmPermissionItemEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPermissionItemModuleBatchSet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPermissionItemModuleBatchSet.designer.cs">
+      <DependentUpon>FrmPermissionItemModuleBatchSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPermissionSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPermissionSelect.designer.cs">
+      <DependentUpon>FrmPermissionSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmProjectRolePermissionAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmProjectRolePermissionAdmin.designer.cs">
+      <DependentUpon>FrmProjectRolePermissionAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmProjectUserPermissionAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmProjectUserPermissionAdmin.designer.cs">
+      <DependentUpon>FrmProjectUserPermissionAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmResourcePermission.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmResourcePermission.designer.cs">
+      <DependentUpon>FrmResourcePermission.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmResourceSetPermission.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmResourceSetPermission.designer.cs">
+      <DependentUpon>FrmResourceSetPermission.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRoleAuthorizationScope.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRoleAuthorizationScope.designer.cs">
+      <DependentUpon>FrmRoleAuthorizationScope.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRoleModulePermission.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRoleModulePermission.designer.cs">
+      <DependentUpon>FrmRoleModulePermission.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRoleModulePermissionBatchSet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRoleModulePermissionBatchSet.designer.cs">
+      <DependentUpon>FrmRoleModulePermissionBatchSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRoleOrganizeScope.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRoleOrganizeScope.designer.cs">
+      <DependentUpon>FrmRoleOrganizeScope.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRolePermission.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRolePermission.designer.cs">
+      <DependentUpon>FrmRolePermission.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRolePermission2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRolePermission2.designer.cs">
+      <DependentUpon>FrmRolePermission2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRolePermissionAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRolePermissionAdmin.designer.cs">
+      <DependentUpon>FrmRolePermissionAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRolePermissionBatchSet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRolePermissionBatchSet.designer.cs">
+      <DependentUpon>FrmRolePermissionBatchSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRolePermissionItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRolePermissionItem.designer.cs">
+      <DependentUpon>FrmRolePermissionItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRolePermissionItemScope.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRolePermissionItemScope.designer.cs">
+      <DependentUpon>FrmRolePermissionItemScope.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRolePermissionScope.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRolePermissionScope.designer.cs">
+      <DependentUpon>FrmRolePermissionScope.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRoleResourcePermission.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRoleResourcePermission.designer.cs">
+      <DependentUpon>FrmRoleResourcePermission.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRoleTreeResourcePermission.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRoleTreeResourcePermission.designer.cs">
+      <DependentUpon>FrmRoleTreeResourcePermission.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmScopePermissionSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmScopePermissionSelect.designer.cs">
+      <DependentUpon>FrmScopePermissionSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSetPermissionItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSetPermissionItem.designer.cs">
+      <DependentUpon>FrmSetPermissionItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmShowConstraintTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmShowConstraintTable.designer.cs">
+      <DependentUpon>FrmShowConstraintTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTableColumnPermission.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTableColumnPermission.designer.cs">
+      <DependentUpon>FrmTableColumnPermission.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTableColumnsRolePermissionAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTableColumnsRolePermissionAdmin.designer.cs">
+      <DependentUpon>FrmTableColumnsRolePermissionAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTableColumnsUserPermissionAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTableColumnsUserPermissionAdmin.designer.cs">
+      <DependentUpon>FrmTableColumnsUserPermissionAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTableScope.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTableScope.designer.cs">
+      <DependentUpon>FrmTableScope.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTableScopeConstraint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTableScopeConstraint.designer.cs">
+      <DependentUpon>FrmTableScopeConstraint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTreeResourcePermission.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTreeResourcePermission.designer.cs">
+      <DependentUpon>FrmTreeResourcePermission.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUseAuthorizationScope.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUseAuthorizationScope.designer.cs">
+      <DependentUpon>FrmUseAuthorizationScope.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUserModulePermission.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUserModulePermission.designer.cs">
+      <DependentUpon>FrmUserModulePermission.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUserModulePermissionBatchSet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUserModulePermissionBatchSet.designer.cs">
+      <DependentUpon>FrmUserModulePermissionBatchSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUserModulePermissionItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUserModulePermissionItem.designer.cs">
+      <DependentUpon>FrmUserModulePermissionItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUserOrganizeScope.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUserOrganizeScope.designer.cs">
+      <DependentUpon>FrmUserOrganizeScope.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUserPermission.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUserPermission.designer.cs">
+      <DependentUpon>FrmUserPermission.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUserPermissionAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUserPermissionAdmin.designer.cs">
+      <DependentUpon>FrmUserPermissionAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUserPermissionBatchSet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUserPermissionBatchSet.designer.cs">
+      <DependentUpon>FrmUserPermissionBatchSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUserPermissionItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUserPermissionItem.designer.cs">
+      <DependentUpon>FrmUserPermissionItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUserPermissionItemScope.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUserPermissionItemScope.designer.cs">
+      <DependentUpon>FrmUserPermissionItemScope.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUserPermissionScope.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUserPermissionScope.designer.cs">
+      <DependentUpon>FrmUserPermissionScope.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUserPermissionView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUserPermissionView.designer.cs">
+      <DependentUpon>FrmUserPermissionView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUserResourcePermission.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUserResourcePermission.designer.cs">
+      <DependentUpon>FrmUserResourcePermission.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUserTreeResourcePermission.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUserTreeResourcePermission.designer.cs">
+      <DependentUpon>FrmUserTreeResourcePermission.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PermissionScopes.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UCUserPermission.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCUserPermission.designer.cs">
+      <DependentUpon>UCUserPermission.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FrmOrganizePermission.resx">
+      <DependentUpon>FrmOrganizePermission.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmOrganizePermissionAdmin.resx">
+      <DependentUpon>FrmOrganizePermissionAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPermissionItemAdd.resx">
+      <DependentUpon>FrmPermissionItemAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPermissionItemAdmin.resx">
+      <DependentUpon>FrmPermissionItemAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPermissionItemEdit.resx">
+      <DependentUpon>FrmPermissionItemEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPermissionItemModuleBatchSet.resx">
+      <DependentUpon>FrmPermissionItemModuleBatchSet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPermissionSelect.resx">
+      <DependentUpon>FrmPermissionSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmProjectRolePermissionAdmin.resx">
+      <DependentUpon>FrmProjectRolePermissionAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmProjectUserPermissionAdmin.resx">
+      <DependentUpon>FrmProjectUserPermissionAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmResourcePermission.resx">
+      <DependentUpon>FrmResourcePermission.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmResourceSetPermission.resx">
+      <DependentUpon>FrmResourceSetPermission.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRoleAuthorizationScope.resx">
+      <DependentUpon>FrmRoleAuthorizationScope.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRoleModulePermission.resx">
+      <DependentUpon>FrmRoleModulePermission.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRoleModulePermissionBatchSet.resx">
+      <DependentUpon>FrmRoleModulePermissionBatchSet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRoleOrganizeScope.resx">
+      <DependentUpon>FrmRoleOrganizeScope.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRolePermission.resx">
+      <DependentUpon>FrmRolePermission.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRolePermission2.resx">
+      <DependentUpon>FrmRolePermission2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRolePermissionAdmin.resx">
+      <DependentUpon>FrmRolePermissionAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRolePermissionBatchSet.resx">
+      <DependentUpon>FrmRolePermissionBatchSet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRolePermissionItem.resx">
+      <DependentUpon>FrmRolePermissionItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRolePermissionItemScope.resx">
+      <DependentUpon>FrmRolePermissionItemScope.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRolePermissionScope.resx">
+      <DependentUpon>FrmRolePermissionScope.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRoleResourcePermission.resx">
+      <DependentUpon>FrmRoleResourcePermission.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRoleTreeResourcePermission.resx">
+      <DependentUpon>FrmRoleTreeResourcePermission.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmScopePermissionSelect.resx">
+      <DependentUpon>FrmScopePermissionSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSetPermissionItem.resx">
+      <DependentUpon>FrmSetPermissionItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmShowConstraintTable.resx">
+      <DependentUpon>FrmShowConstraintTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTableColumnPermission.resx">
+      <DependentUpon>FrmTableColumnPermission.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTableColumnsRolePermissionAdmin.resx">
+      <DependentUpon>FrmTableColumnsRolePermissionAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTableColumnsUserPermissionAdmin.resx">
+      <DependentUpon>FrmTableColumnsUserPermissionAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTableScope.resx">
+      <DependentUpon>FrmTableScope.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTableScopeConstraint.resx">
+      <DependentUpon>FrmTableScopeConstraint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTreeResourcePermission.resx">
+      <DependentUpon>FrmTreeResourcePermission.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUseAuthorizationScope.resx">
+      <DependentUpon>FrmUseAuthorizationScope.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUserModulePermission.resx">
+      <DependentUpon>FrmUserModulePermission.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUserModulePermissionBatchSet.resx">
+      <DependentUpon>FrmUserModulePermissionBatchSet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUserModulePermissionItem.resx">
+      <DependentUpon>FrmUserModulePermissionItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUserOrganizeScope.resx">
+      <DependentUpon>FrmUserOrganizeScope.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUserPermission.resx">
+      <DependentUpon>FrmUserPermission.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUserPermissionAdmin.resx">
+      <DependentUpon>FrmUserPermissionAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUserPermissionBatchSet.resx">
+      <DependentUpon>FrmUserPermissionBatchSet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUserPermissionItem.resx">
+      <DependentUpon>FrmUserPermissionItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUserPermissionItemScope.resx">
+      <DependentUpon>FrmUserPermissionItemScope.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUserPermissionScope.resx">
+      <DependentUpon>FrmUserPermissionScope.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUserPermissionView.resx">
+      <DependentUpon>FrmUserPermissionView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUserResourcePermission.resx">
+      <DependentUpon>FrmUserResourcePermission.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUserTreeResourcePermission.resx">
+      <DependentUpon>FrmUserTreeResourcePermission.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCUserPermission.resx">
+      <DependentUpon>UCUserPermission.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\DotNet.BaseManager\DotNet.BaseManagers.csproj">
+      <Project>{728246b7-8f5b-4ed6-8276-2a1ac73cc22e}</Project>
+      <Name>DotNet.BaseManagers</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\DotNet.DbUtilities\DotNet.DbUtilities.csproj">
+      <Project>{12d788ed-059d-4abf-b2d1-2f7a2946d489}</Project>
+      <Name>DotNet.DbUtilities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\DotNet.IService\DotNet.IService.csproj">
+      <Project>{e959a128-f19f-4a23-bea3-880926605e4f}</Project>
+      <Name>DotNet.IService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\DotNet.Manager\DotNet.Manager.csproj">
+      <Project>{0431ec75-824c-4ca9-a350-dfdc28c5b6d2}</Project>
+      <Name>DotNet.Manager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\DotNet.Model\DotNet.Model.csproj">
+      <Project>{0e239ce9-7fec-45b2-b2ec-258f49dfe269}</Project>
+      <Name>DotNet.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\DotNet.Service\DotNet.Service.csproj">
+      <Project>{5621b388-2b29-4d07-8a00-d7fb7dccd9cc}</Project>
+      <Name>DotNet.Service</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\DotNet.Utilities\DotNet.Utilities.csproj">
+      <Project>{cc7ed3ae-009f-41b0-b2ce-3345ddcdca33}</Project>
+      <Name>DotNet.Utilities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DotNet.WinForm.Common\DotNet.WinForm.Common.csproj">
+      <Project>{8329d3f6-cbeb-4d81-bf42-8b9d61416a73}</Project>
+      <Name>DotNet.WinForm.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DotNet.WinForm.ItemDetails\DotNet.WinForm.ItemDetails.csproj">
+      <Project>{bcaf99c4-3685-4b59-b657-80e81cc8fdf4}</Project>
+      <Name>DotNet.WinForm.ItemDetails</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DotNet.WinForm.Organization\DotNet.WinForm.Organization.csproj">
+      <Project>{89fec02d-1049-48a3-98b7-466425981137}</Project>
+      <Name>DotNet.WinForm.Organization</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DotNet.WinForm.Role\DotNet.WinForm.Role.csproj">
+      <Project>{c3e7a2ce-0871-4953-a9a5-3a5e1ff90e17}</Project>
+      <Name>DotNet.WinForm.Role</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

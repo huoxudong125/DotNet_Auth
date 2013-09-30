@@ -1,0 +1,345 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F3B73D0F-C5D0-45D9-8101-DC6BC8373CF5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DotNet.WinForm.User</RootNamespace>
+    <AssemblyName>DotNet.WinForm.User</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FrmAccountEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAccountEdit.designer.cs">
+      <DependentUpon>FrmAccountEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmChangeCommunicationPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmChangeCommunicationPassword.designer.cs">
+      <DependentUpon>FrmChangeCommunicationPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmChangeSignedPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmChangeSignedPassword.designer.cs">
+      <DependentUpon>FrmChangeSignedPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCreateDigitalSignature.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCreateDigitalSignature.designer.cs">
+      <DependentUpon>FrmCreateDigitalSignature.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDigitalSignature.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDigitalSignature.designer.cs">
+      <DependentUpon>FrmDigitalSignature.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmImportUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmImportUser.designer.cs">
+      <DependentUpon>FrmImportUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmIPLimit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmIPLimit.designer.cs">
+      <DependentUpon>FrmIPLimit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRequestAnAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRequestAnAccount.designer.cs">
+      <DependentUpon>FrmRequestAnAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSignature.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSignature.designer.cs">
+      <DependentUpon>FrmSignature.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUserAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUserAdd.designer.cs">
+      <DependentUpon>FrmUserAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUserAddToOrganize.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUserAddToOrganize.designer.cs">
+      <DependentUpon>FrmUserAddToOrganize.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUserAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUserAdmin.designer.cs">
+      <DependentUpon>FrmUserAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUserAudit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUserAudit.designer.cs">
+      <DependentUpon>FrmUserAudit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUserChangePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUserChangePassword.designer.cs">
+      <DependentUpon>FrmUserChangePassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUserEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUserEdit.designer.cs">
+      <DependentUpon>FrmUserEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUserOrganizeBatchSet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUserOrganizeBatchSet.designer.cs">
+      <DependentUpon>FrmUserOrganizeBatchSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUserOrganizeRoleAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUserOrganizeRoleAdmin.designer.cs">
+      <DependentUpon>FrmUserOrganizeRoleAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUserRoleAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUserRoleAdmin.designer.cs">
+      <DependentUpon>FrmUserRoleAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUserRoleBatchSet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUserRoleBatchSet.designer.cs">
+      <DependentUpon>FrmUserRoleBatchSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUserSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUserSelect.designer.cs">
+      <DependentUpon>FrmUserSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUserSetCommunicationPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUserSetCommunicationPassword.designer.cs">
+      <DependentUpon>FrmUserSetCommunicationPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUserSetPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUserSetPassword.designer.cs">
+      <DependentUpon>FrmUserSetPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FrmAccountEdit.resx">
+      <DependentUpon>FrmAccountEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmChangeCommunicationPassword.resx">
+      <DependentUpon>FrmChangeCommunicationPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmChangeSignedPassword.resx">
+      <DependentUpon>FrmChangeSignedPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCreateDigitalSignature.resx">
+      <DependentUpon>FrmCreateDigitalSignature.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDigitalSignature.resx">
+      <DependentUpon>FrmDigitalSignature.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmImportUser.resx">
+      <DependentUpon>FrmImportUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmIPLimit.resx">
+      <DependentUpon>FrmIPLimit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRequestAnAccount.resx">
+      <DependentUpon>FrmRequestAnAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSignature.resx">
+      <DependentUpon>FrmSignature.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUserAdd.resx">
+      <DependentUpon>FrmUserAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUserAddToOrganize.resx">
+      <DependentUpon>FrmUserAddToOrganize.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUserAdmin.resx">
+      <DependentUpon>FrmUserAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUserAudit.resx">
+      <DependentUpon>FrmUserAudit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUserChangePassword.resx">
+      <DependentUpon>FrmUserChangePassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUserEdit.resx">
+      <DependentUpon>FrmUserEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUserOrganizeBatchSet.resx">
+      <DependentUpon>FrmUserOrganizeBatchSet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUserOrganizeRoleAdmin.resx">
+      <DependentUpon>FrmUserOrganizeRoleAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUserRoleAdmin.resx">
+      <DependentUpon>FrmUserRoleAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUserRoleBatchSet.resx">
+      <DependentUpon>FrmUserRoleBatchSet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUserSelect.resx">
+      <DependentUpon>FrmUserSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUserSetCommunicationPassword.resx">
+      <DependentUpon>FrmUserSetCommunicationPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUserSetPassword.resx">
+      <DependentUpon>FrmUserSetPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\DotNet.BaseManager\DotNet.BaseManagers.csproj">
+      <Project>{728246b7-8f5b-4ed6-8276-2a1ac73cc22e}</Project>
+      <Name>DotNet.BaseManagers</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\DotNet.DbUtilities\DotNet.DbUtilities.csproj">
+      <Project>{12d788ed-059d-4abf-b2d1-2f7a2946d489}</Project>
+      <Name>DotNet.DbUtilities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\DotNet.IService\DotNet.IService.csproj">
+      <Project>{e959a128-f19f-4a23-bea3-880926605e4f}</Project>
+      <Name>DotNet.IService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\DotNet.Manager\DotNet.Manager.csproj">
+      <Project>{0431ec75-824c-4ca9-a350-dfdc28c5b6d2}</Project>
+      <Name>DotNet.Manager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\DotNet.Model\DotNet.Model.csproj">
+      <Project>{0e239ce9-7fec-45b2-b2ec-258f49dfe269}</Project>
+      <Name>DotNet.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\DotNet.Service\DotNet.Service.csproj">
+      <Project>{5621b388-2b29-4d07-8a00-d7fb7dccd9cc}</Project>
+      <Name>DotNet.Service</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\DotNet.Utilities\DotNet.Utilities.csproj">
+      <Project>{cc7ed3ae-009f-41b0-b2ce-3345ddcdca33}</Project>
+      <Name>DotNet.Utilities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DotNet.WinForm.Common\DotNet.WinForm.Common.csproj">
+      <Project>{8329d3f6-cbeb-4d81-bf42-8b9d61416a73}</Project>
+      <Name>DotNet.WinForm.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DotNet.WinForm.File\DotNet.WinForm.Files.csproj">
+      <Project>{c4524c81-2a1f-4fe1-88cb-b8fd5e9aed22}</Project>
+      <Name>DotNet.WinForm.Files</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DotNet.WinForm.Role\DotNet.WinForm.Role.csproj">
+      <Project>{c3e7a2ce-0871-4953-a9a5-3a5e1ff90e17}</Project>
+      <Name>DotNet.WinForm.Role</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Address.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\App.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Company.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Document.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Face_0.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Head.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Help.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Home.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OA.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ShareAnIdea.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sned.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\update.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\workflow.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
