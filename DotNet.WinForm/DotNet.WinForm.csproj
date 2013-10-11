@@ -155,6 +155,10 @@
       <Project>{c7ac801e-968f-4025-8d7e-17334c90455a}</Project>
       <Name>DotNet.WinForm.Message</Name>
     </ProjectReference>
+    <ProjectReference Include="..\DotNet.WinForms\DotNet.WinForm.User\DotNet.WinForm.User.csproj">
+      <Project>{f3b73d0f-c5d0-45d9-8101-dc6bc8373cf5}</Project>
+      <Name>DotNet.WinForm.User</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
